@@ -24,7 +24,7 @@ winner_font = pygame.font.SysFont("comcsan", 100)
 FPS = 60
 VEL = 5
 BULLET_VEL = 8
-MAX_BULLETS = 5
+MAX_BULLETS = 8
 
 
 yellow_hit = pygame.USEREVENT + 1
