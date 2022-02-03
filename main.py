@@ -16,6 +16,7 @@ BORDER = pygame.Rect(WIDTH//2 - 5,0,10,HEIGHT)
 
 bullet_hit_sound = pygame.mixer.Sound(os.path.join("Assets", "Grenade+1.mp3"))
 bullet_fire = pygame.mixer.Sound(os.path.join("Assets", "Gun+Silencer.mp3"))
+winnersound = pygame.mixer.Sound(os.path.join('Assets',"winnerssoundd.mp3"))
 
 health_font = pygame.font.SysFont('comicsans', 40)
 winner_font = pygame.font.SysFont("comcsan", 100)
@@ -153,6 +154,7 @@ def main():
             winner = "Red Wins"
 
         if winner != "":
+            winnersound.play()
             dinner(winner)
             break
 
